@@ -12,6 +12,7 @@ body {
 }
 
 main {
+  position: absolute;
   overflow-x: hidden;
   width: 100%;
   height: auto;
