@@ -1,0 +1,276 @@
+$dark-blue:#011627;
+$light-blue:#273642;
+$yellow:#FF9F1C;
+$footer-blue:#033863;
+$other-white:#FAFAFA;
+$red:#E71D36;
+$sky-blue:#2EC4B6;
+
+$raleway:'Raleway',
+sans-serif;
+$dm-sans: 'DM Sans',
+sans-serif;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    // position: absolute;
+    overflow-x: hidden;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+header {
+    overflow: hidden;
+    background-color: $dark-blue;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .menu {
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        width: 70%;
+        height: 92vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $dark-blue;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform .5s ease-in;
+
+        li {
+            // opacity: 0;
+            list-style: none;
+
+            a {
+                color: $other-white;
+                font-family: $dm-sans;
+                text-decoration: none;
+                font-size: 22px;
+                letter-spacing: 5px;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        div {
+            transition: all 0.5s ease;
+            width: 25px;
+            height: 3px;
+            background-color: $other-white;
+            margin: 5px;
+        }
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+// **************************logo**********************************
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#line {
+    stroke-dasharray: 9992.9072265625px;
+    stroke-dashoffset: 9992.9072265625px;
+    animation: anim 3s ease alternate infinite;
+}
+
+@keyframes anim {
+
+    from {
+        fill: transparent;
+    }
+
+    to {
+        stroke-dashoffset: 0px;
+        fill: $other-white;
+    }
+}
+
+#Vector_2 {
+    animation: fill1 1s alternate infinite;
+    animation-delay: .5s;
+}
+
+#Vector_3 {
+    animation: fill2 1s alternate infinite;
+    animation-delay: .7s;
+}
+
+#Vector_4 {
+    animation: fill3 1s alternate infinite;
+    animation-delay: .9s;
+}
+
+#Vector_5 {
+    animation: fill1 1s alternate infinite;
+    animation-delay: 1.2s;
+}
+
+#Vector_6 {
+    animation: fill2 1s alternate infinite;
+    animation-delay: 1.4s;
+}
+
+#Vector_7 {
+    animation: fill13 1s alternate infinite;
+    animation-delay: 1.5s;
+}
+
+#Vector_8 {
+    animation: fill1 1s alternate infinite;
+    animation-delay: 1.6s;
+}
+
+#Vector_9 {
+    animation: fill2 1s alternate infinite;
+    animation-delay: 1.7s;
+}
+
+#Vector_10 {
+    animation: fill3 1s alternate infinite;
+    animation-delay: 1.9s;
+}
+
+#Vector_11 {
+    animation: fill1 1s alternate infinite;
+    animation-delay: 2.1s;
+}
+
+#Vector_12 {
+    animation: fill2 1s alternate infinite;
+    animation-delay: 2.3s;
+}
+
+#Vector_13 {
+    animation: fill13 1s alternate infinite;
+    animation-delay: 2.5s;
+}
+
+#Vector_14 {
+    animation: fill1 1s alternate infinite;
+    animation-delay: 2.7s;
+}
+
+#Vector_15 {
+    animation: fill12 1s alternate infinite;
+    animation-delay: 2.9s;
+}
+
+#Vector_16 {
+    animation: fill13 1s alternate infinite;
+    animation-delay: 3.1s;
+}
+
+#Vector_17 {
+    animation: fill1 1s alternate infinite;
+    animation-delay: 3.3s;
+}
+
+@keyframes fill1 {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: #00B2FF;
+    }
+}
+
+@keyframes fill2 {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: #FEE9AB;
+    }
+}
+
+@keyframes fill3 {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: #FF0000;
+    }
+}
+
+#text {
+    margin-left: 6px;
+}
+
+#textpath {
+    stroke-dasharray: 2406.29296875px;
+    stroke-dashoffset: 2406.29296875px;
+    transition: all ease;
+    animation: textanimm ease alternate infinite;
+    animation-duration: 2s;
+}
+
+@keyframes textanimm {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+        fill: $other-white;
+    }
+}
+
+// **************************logo**********************************

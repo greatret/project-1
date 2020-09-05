@@ -1,0 +1,378 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+main {
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+header {
+  overflow: hidden;
+  background-color: #011627;
+  height: 8vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .menu {
+  position: absolute;
+  right: 0;
+  top: 8vh;
+  width: 70%;
+  height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #011627;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform .5s ease-in;
+  transition: -webkit-transform .5s ease-in;
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+}
+
+header .menu li {
+  list-style: none;
+}
+
+header .menu li a {
+  color: #FAFAFA;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  font-size: 22px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+
+header .burger {
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header .burger div {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 25px;
+  height: 3px;
+  background-color: #FAFAFA;
+  margin: 5px;
+}
+
+header .nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#line {
+  stroke-dasharray: 9992.9072265625px;
+  stroke-dashoffset: 9992.9072265625px;
+  -webkit-animation: anim 3s ease alternate infinite;
+          animation: anim 3s ease alternate infinite;
+}
+
+@-webkit-keyframes anim {
+  from {
+    fill: transparent;
+  }
+  to {
+    stroke-dashoffset: 0px;
+    fill: #FAFAFA;
+  }
+}
+
+@keyframes anim {
+  from {
+    fill: transparent;
+  }
+  to {
+    stroke-dashoffset: 0px;
+    fill: #FAFAFA;
+  }
+}
+
+#Vector_2 {
+  -webkit-animation: fill1 1s alternate infinite;
+          animation: fill1 1s alternate infinite;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+#Vector_3 {
+  -webkit-animation: fill2 1s alternate infinite;
+          animation: fill2 1s alternate infinite;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+}
+
+#Vector_4 {
+  -webkit-animation: fill3 1s alternate infinite;
+          animation: fill3 1s alternate infinite;
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+}
+
+#Vector_5 {
+  -webkit-animation: fill1 1s alternate infinite;
+          animation: fill1 1s alternate infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+#Vector_6 {
+  -webkit-animation: fill2 1s alternate infinite;
+          animation: fill2 1s alternate infinite;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+#Vector_7 {
+  -webkit-animation: fill13 1s alternate infinite;
+          animation: fill13 1s alternate infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+#Vector_8 {
+  -webkit-animation: fill1 1s alternate infinite;
+          animation: fill1 1s alternate infinite;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+#Vector_9 {
+  -webkit-animation: fill2 1s alternate infinite;
+          animation: fill2 1s alternate infinite;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
+
+#Vector_10 {
+  -webkit-animation: fill3 1s alternate infinite;
+          animation: fill3 1s alternate infinite;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+#Vector_11 {
+  -webkit-animation: fill1 1s alternate infinite;
+          animation: fill1 1s alternate infinite;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+#Vector_12 {
+  -webkit-animation: fill2 1s alternate infinite;
+          animation: fill2 1s alternate infinite;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+}
+
+#Vector_13 {
+  -webkit-animation: fill13 1s alternate infinite;
+          animation: fill13 1s alternate infinite;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+#Vector_14 {
+  -webkit-animation: fill1 1s alternate infinite;
+          animation: fill1 1s alternate infinite;
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+}
+
+#Vector_15 {
+  -webkit-animation: fill12 1s alternate infinite;
+          animation: fill12 1s alternate infinite;
+  -webkit-animation-delay: 2.9s;
+          animation-delay: 2.9s;
+}
+
+#Vector_16 {
+  -webkit-animation: fill13 1s alternate infinite;
+          animation: fill13 1s alternate infinite;
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+}
+
+#Vector_17 {
+  -webkit-animation: fill1 1s alternate infinite;
+          animation: fill1 1s alternate infinite;
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
+}
+
+@-webkit-keyframes fill1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #00B2FF;
+  }
+}
+
+@keyframes fill1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #00B2FF;
+  }
+}
+
+@-webkit-keyframes fill2 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #FEE9AB;
+  }
+}
+
+@keyframes fill2 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #FEE9AB;
+  }
+}
+
+@-webkit-keyframes fill3 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #FF0000;
+  }
+}
+
+@keyframes fill3 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #FF0000;
+  }
+}
+
+#text {
+  margin-left: 6px;
+}
+
+#textpath {
+  stroke-dasharray: 2406.29296875px;
+  stroke-dashoffset: 2406.29296875px;
+  -webkit-transition: all ease;
+  transition: all ease;
+  -webkit-animation: textanimm ease alternate infinite;
+          animation: textanimm ease alternate infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes textanimm {
+  from {
+    fill: transparent;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill: #FAFAFA;
+  }
+}
+
+@keyframes textanimm {
+  from {
+    fill: transparent;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill: #FAFAFA;
+  }
+}
+/*# sourceMappingURL=style.css.map */
