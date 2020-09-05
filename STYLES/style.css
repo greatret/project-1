@@ -9,11 +9,11 @@
 
 body {
   width: 100%;
+  position: relative;
 }
 
 main {
-  position: absolute;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   width: 100%;
   height: auto;
   background-color: white;
@@ -63,6 +63,7 @@ header .menu {
 }
 
 header .menu li {
+  opacity: 0;
   list-style: none;
 }
 

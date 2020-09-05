@@ -21,11 +21,12 @@ sans-serif;
 
 body {
     width: 100%;
+    position: relative;
 }
 
 main {
-    position: absolute;
-    overflow-x: hidden;
+    // position: absolute;
+    overflow-x: hidden !important;
     width: 100%;
     height: auto;
     background-color: white;
@@ -56,10 +57,11 @@ header {
         transition: transform .5s ease-in;
 
         li {
-            // opacity: 0;
+            opacity: 0;
             list-style: none;
 
             a {
+
                 color: $other-white;
                 font-family: $dm-sans;
                 text-decoration: none;
