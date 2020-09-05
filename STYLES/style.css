@@ -69,9 +69,29 @@ header .menu li a {
   color: #FAFAFA;
   font-family: "DM Sans", sans-serif;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 15px;
   letter-spacing: 5px;
   font-weight: lighter;
+}
+
+header .menu .prop-in-menu-1 {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 200px;
+  height: 200px;
+  background-color: #273642;
+  opacity: .2;
+}
+
+header .menu .prop-in-menu-2 {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  width: 200px;
+  height: 200px;
+  background-color: #273642;
+  opacity: .2;
 }
 
 header .burger {

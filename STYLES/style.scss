@@ -63,10 +63,31 @@ header {
                 color: $other-white;
                 font-family: $dm-sans;
                 text-decoration: none;
-                font-size: 22px;
+                font-size: 15px;
                 letter-spacing: 5px;
                 font-weight: lighter;
             }
+        }
+
+        .prop-in-menu-1 {
+
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            width: 200px;
+            height: 200px;
+            background-color: $light-blue;
+            opacity: .2;
+        }
+
+        .prop-in-menu-2 {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            width: 200px;
+            height: 200px;
+            background-color: $light-blue;
+            opacity: .2;
         }
     }
 
