@@ -21,7 +21,8 @@ sans-serif;
 
 body {
     width: 100%;
-    position: relative;
+    position: absolute;
+    overflow-x: hidden;
 }
 
 main {
@@ -61,7 +62,6 @@ header {
             list-style: none;
 
             a {
-
                 color: $other-white;
                 font-family: $dm-sans;
                 text-decoration: none;
