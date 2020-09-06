@@ -123,6 +123,7 @@ header .burger div {
 
 header .nav-active {
   width: 70%;
+  opacity: 1;
 }
 
 @-webkit-keyframes navLinkFade {
